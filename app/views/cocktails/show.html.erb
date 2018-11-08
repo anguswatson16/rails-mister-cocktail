@@ -1,0 +1,11 @@
+<h1><%= @cocktail.name %></h1>
+<ul>
+  <p>Doses: </p>
+    <% @cocktail.doses.each do |dose| %>
+      <li><%= dose.ingredient.name %></li>
+        <p><%= dose.description %></p>
+        <p><%= link_to("Delete Dose", dose_path(dose.id), method: "delete") %></p>
+    <% end %>
+</ul>
+<p><%= link_to("Add Dose", new_cocktail_dose_path(params[:id])) %></p>
+<p><%= link_to("Home", cocktails_path) %></p>
