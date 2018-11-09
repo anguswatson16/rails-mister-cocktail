@@ -29,6 +29,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Don't share secret keys!
+gem 'dotenv-rails', groups: [:development, :test]
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
