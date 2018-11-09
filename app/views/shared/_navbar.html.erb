@@ -1,0 +1,29 @@
+<div class="navbar-mister-cocktail">
+  <!-- Logo -->
+  <i class="fas fa-glass-martini" class="navbar-mister-cocktail-brand"></i>
+  <!-- Right Navigation -->
+  <div class="navbar-mister-cocktail-right hidden-xs hidden-sm">
+
+    <!-- Profile picture with dropdown list -->
+    <div class="navbar-mister-cocktail-item">
+      <div class="dropdown">
+        <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
+        <ul class="dropdown-menu dropdown-menu-right navbar-mister-cocktail-dropdown-menu">
+          <li><%= link_to("Home", cocktails_path) %></li>
+          <li><%= link_to("New Cocktail", new_cocktail_path) %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-mister-cocktail-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-mister-cocktail-dropdown-menu">
+        <li><%= link_to("Home", cocktails_path) %></li>
+        <li><%= link_to("New Cocktail", new_cocktail_path) %></li>
+      </ul>
+    </div>
+  </div>
+</div>
