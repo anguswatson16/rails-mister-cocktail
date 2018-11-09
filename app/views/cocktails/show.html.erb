@@ -1,8 +1,8 @@
 <h1><%= @cocktail.name %></h1>
-<% if @cocktail.photo.nil? %>
-  <p>no photo</p>
-<% else %>
+<% if @cocktail.photo.present? %>
   <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+<% else %>
+  <p>no photo</p>
 <% end %>
 <ul>
   <p>Doses: </p>
