@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'dotenv-rails', groups: [:development, :test]
 
 # Cloudinary for images!!
-gem 'cloudinary'
+gem 'cloudinary', '~> 1.9.1'
 
 # Uploading photos to the website!!!
 gem 'carrierwave', '~> 1.2'
