@@ -32,6 +32,10 @@ gem 'jbuilder', '~> 2.5'
 # Don't share secret keys!
 gem 'dotenv-rails', groups: [:development, :test]
 
+# Cloudinary for images!!
+
+gem 'cloudinary'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
