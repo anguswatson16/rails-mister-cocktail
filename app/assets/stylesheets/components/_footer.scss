@@ -1,11 +1,12 @@
 .footer {
   background: #F4F4F4;
-  display: flex;
+  // display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
   height: 100px;
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
+
 }
 .footer-links {
   display: flex;
@@ -21,6 +22,10 @@
 .footer-links a:hover {
   opacity: 1;
 }
-.footer-copyright {
+.footer-text {
   font-size: 10px;
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
